@@ -1,0 +1,92 @@
+.customInput {
+    display: flex;
+    flex-direction: column;
+    & .MuiFormControl-root {
+        width: 100%;
+    }
+
+    & .MuiOutlinedInput-notchedOutline {
+        // padding: 15px;
+        border-radius: 5px;
+        outline: 0;
+        // border: 0;
+        background-color: #ccc;
+        box-shadow: none;
+        &:focus {
+            border-color: #fff;
+            outline: 0;
+        }
+    }
+    & .form-control {
+        width: 200px;
+        padding: 15px;
+        border-radius: 5px;
+        outline: 0;
+        border: 0;
+        background-color: #ccc;
+        box-shadow: 1px 1px 3px 0px #000000a3;
+    }
+}
+.customCheckboxgrp {
+    display: flex;
+    flex-direction: column;
+    & .checkboxgrp {
+        display: flex;
+    }
+    & .MuiFormControl-root {
+        margin: 0;
+    }
+}
+.customBtn {
+    & .MuiButton-root {
+        white-space: nowrap;
+    }
+}
+.customCheckbox {
+    & .MuiButtonBase-root-MuiCheckbox-root {
+        &.Mui-checked {
+            color: #2e7d32;
+        }
+    }
+    & .MuiSvgIcon-root {
+        fill: #2e7d32;
+    }
+    & .MuiFormControlLabel-root {
+        display: flex;
+        align-items: center;
+    }
+    & .MuiFormControlLabel-label {
+        color: #2e7d32;
+        font-size: 2rem;
+    }
+}
+.customRangeSlider {
+    & .MuiSlider-root {
+        color: #2e7d32;
+    }
+}
+
+.score-card {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &.correctscore-card {
+        background-color: #2e7d32;
+        border: 1px solid #2e7d32;
+    }
+    &.wrongscore-card {
+        background-color: #dd1a1a;
+        border: 1px solid #dd1a1a;
+        & .label-value {
+            color: #dd1a1a;
+        }
+    }
+    & .card-row {
+        background-color: #ffffffb8;
+    }
+}
+.score-header {
+    & .quiz-title {
+        font-size: 20px;
+    }
+}
